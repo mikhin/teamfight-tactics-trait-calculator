@@ -27,3 +27,8 @@ export interface OptimalityStoreItem {
   maxCount: number
   optimality: string
 }
+
+export interface Champion {
+  name: string
+  traits: string[]
+}
