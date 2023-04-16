@@ -10,7 +10,7 @@ const Header = (): ReactElement => {
       <Heading as='h1' mb={4} size='xl'>
         Teamfight Tactics Traits Calculator
         <br/>
-        <small>Set 8</small>
+        <small>Set 8.5</small>
       </Heading>
 
       <Text as='p' gridColumn='1/3' mb={1}>
