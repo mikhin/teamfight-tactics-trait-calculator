@@ -1,4 +1,4 @@
-# Teamfight Tactics Traits Calculator. Set 8.5.
+# Teamfight Tactics Traits Calculator. Set 9.
 Count the traits of your opponents to choose the best comp. Look the optimal trait count in the table below.
 
 - Production – [https://tft-teamfight-tactics-trait-calculator.com/](https://tft-teamfight-tactics-trait-calculator.com/)

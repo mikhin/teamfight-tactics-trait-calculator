@@ -1,171 +1,18 @@
 [
   {
-    "apiName": "Set8_Riftwalker",
-    "desc": "<row>(@MinUnits@) Riftwalkers open a gap between dimensions and summon their ally Zac, who grows in power based on the total star level of Riftwalkers.<br><br>Zac gains the last-listed Trait of the closest Riftwalker.</row>",
-    "effects": [
-      {
-        "maxUnits": 25000,
-        "minUnits": 3,
-        "style": 4,
-        "variables": {
-          "{0fe50a20}": 175.0,
-          "{39fb128d}": 12.0,
-          "{61b892a0}": "null",
-          "{770acddd}": 1.0,
-          "{a2e72cff}": 50.0,
-          "{e29392c2}": 1.5
-        }
-      }
-    ],
-    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_8_Riftwalker.TFT_Set8_Stage2.tex",
-    "name": "Riftwalker"
-  },
-  {
-    "apiName": "Set8_Admin",
-    "desc": "A.D.M.I.N. programs a custom configuration per player each game.<br><br><row>(@MinUnits@) [Initialize ADMIN cause and effect]</row><br><row>(@MinUnits@) [Add another effect to the program]. Boost all tiers by @4Tooltip@%</row><br><row>(@MinUnits@) Boost previous tiers by @6Tooltip@%</row>",
+    "apiName": "Set9_Bastion",
+    "desc": "Bastion champions gain Armor and Magic Resist. This is increased by @BonusPercent*100@% for the first @Duration@ seconds of combat.<br><br><expandRow>(@MinUnits@) +@BonusArmor@ %i:scaleArmor%, +@BonusArmor@ %i:scaleMR%</expandRow>",
     "effects": [
       {
         "maxUnits": 3,
         "minUnits": 2,
         "style": 1,
         "variables": {
-          "{2a683ea4}": 100.0,
-          "{dd2627f2}": 25.0,
-          "{fefec6fb}": 1.0
-        }
-      },
-      {
-        "maxUnits": 5,
-        "minUnits": 4,
-        "style": 4,
-        "variables": {
-          "{2a683ea4}": 100.0,
-          "{dd2627f2}": 25.0,
-          "{fefec6fb}": 1.25
-        }
-      },
-      {
-        "maxUnits": 25000,
-        "minUnits": 6,
-        "style": 5,
-        "variables": {
-          "{2a683ea4}": 100.0,
-          "{dd2627f2}": 25.0,
-          "{fefec6fb}": 2.0
-        }
-      }
-    ],
-    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_8_ADMIN.tex",
-    "name": "A.D.M.I.N."
-  },
-  {
-    "apiName": "Set8_AnimaSquad",
-    "desc": "Anima Squad members pose after champion kills, increasing their fame. Each point of fame grants @HealthPerStack@ permanent Health to each Anima Squad member.<br><br>They also gain:<br><expandRow>(@MinUnits@) @InitialAD@% Attack Damage and @InitialAP@ Ability Power</expandRow><br><br>Total fame: @TFTUnitProperty.trait:TFT8_AnimaFameStacks@<br>Bonus Health: @TFTUnitProperty.trait:TFT8_AnimaFameHP@",
-    "effects": [
-      {
-        "maxUnits": 4,
-        "minUnits": 3,
-        "style": 1,
-        "variables": {
-          "{054d3a66}": 10.0,
-          "{194d59e2}": 10.0,
-          "{40376e4e}": 5.0
-        }
-      },
-      {
-        "maxUnits": 6,
-        "minUnits": 5,
-        "style": 4,
-        "variables": {
-          "{054d3a66}": 35.0,
-          "{194d59e2}": 35.0,
-          "{40376e4e}": 5.0
-        }
-      },
-      {
-        "maxUnits": 25000,
-        "minUnits": 7,
-        "style": 5,
-        "variables": {
-          "{054d3a66}": 60.0,
-          "{194d59e2}": 60.0,
-          "{40376e4e}": 5.0
-        }
-      }
-    ],
-    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_8_AnimaSquad.tex",
-    "name": "Anima Squad"
-  },
-  {
-    "apiName": "Set8_SpaceCorps",
-    "desc": "When a LaserCorp agent attacks or is hit by an attack, their drone deals magic damage to the agent's target (@ICD@ second cooldown). Drones are reassigned to another champion with a drone when the agent dies.<br><br>Drone lasers deal:<br><row>(@MinUnits@) @MagicDamage@ magic damage</row><br><row>(@MinUnits@) @MagicDamage@ magic damage AND all champions get a drone.</row><br><row>(@MinUnits@) @MagicDamage@ magic damage.  </row> <br><row>(@MinUnits@) @MagicDamage@ magic damage.  </row><br>",
-    "effects": [
-      {
-        "maxUnits": 3,
-        "minUnits": 3,
-        "style": 1,
-        "variables": {
-          "ICD": 0.4000000059604645,
-          "MagicDamage": 27.0,
-          "{1b0b983d}": 1.0,
-          "{2ba800f8}": "null",
-          "{59d091e2}": 1.0,
-          "{fc833ad7}": "null"
-        }
-      },
-      {
-        "maxUnits": 4,
-        "minUnits": 4,
-        "style": 3,
-        "variables": {
-          "ICD": 0.4000000059604645,
-          "MagicDamage": 35.0,
-          "{1b0b983d}": 1.0,
-          "{2ba800f8}": 1.0,
-          "{59d091e2}": 1.0,
-          "{fc833ad7}": "null"
-        }
-      },
-      {
-        "maxUnits": 5,
-        "minUnits": 5,
-        "style": 4,
-        "variables": {
-          "ICD": 0.4000000059604645,
-          "MagicDamage": 55.0,
-          "{1b0b983d}": 1.0,
-          "{2ba800f8}": 1.0,
-          "{59d091e2}": 1.0,
-          "{fc833ad7}": "null"
-        }
-      },
-      {
-        "maxUnits": 25000,
-        "minUnits": 6,
-        "style": 5,
-        "variables": {
-          "ICD": 0.4000000059604645,
-          "MagicDamage": 80.0,
-          "{1b0b983d}": 1.0,
-          "{2ba800f8}": 1.0,
-          "{59d091e2}": 1.0,
-          "{fc833ad7}": "null"
-        }
-      }
-    ],
-    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_8_Lasercorps.tex",
-    "name": "LaserCorps"
-  },
-  {
-    "apiName": "Set8_Brawler",
-    "desc": "Brawlers gain additional maximum Health.<br><br><expandRow>(@MinUnits@) +@BonusPercentHealth*100@% maximum Health</expandRow>",
-    "effects": [
-      {
-        "maxUnits": 3,
-        "minUnits": 2,
-        "style": 1,
-        "variables": {
-          "{a92bb347}": 0.20000000298023224
+          "BonusArmor": 20.0,
+          "BonusMR": 20.0,
+          "Duration": 10.0,
+          "{09b7d38c}": 2.0,
+          "{b44c0eed}": 1.0
         }
       },
       {
@@ -173,7 +20,11 @@
         "minUnits": 4,
         "style": 3,
         "variables": {
-          "{a92bb347}": 0.44999998807907104
+          "BonusArmor": 50.0,
+          "BonusMR": 50.0,
+          "Duration": 10.0,
+          "{09b7d38c}": 2.0,
+          "{b44c0eed}": 1.0
         }
       },
       {
@@ -181,7 +32,11 @@
         "minUnits": 6,
         "style": 4,
         "variables": {
-          "{a92bb347}": 0.699999988079071
+          "BonusArmor": 100.0,
+          "BonusMR": 100.0,
+          "Duration": 10.0,
+          "{09b7d38c}": 2.0,
+          "{b44c0eed}": 1.0
         }
       },
       {
@@ -189,102 +44,30 @@
         "minUnits": 8,
         "style": 5,
         "variables": {
-          "{a92bb347}": 1.0
+          "BonusArmor": 225.0,
+          "BonusMR": 225.0,
+          "Duration": 10.0,
+          "{09b7d38c}": 2.0,
+          "{b44c0eed}": 1.0
         }
       }
     ],
-    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_3_Brawler.tex",
-    "name": "Brawler"
+    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Bastion.TFT_Set9.tex",
+    "name": "Bastion"
   },
   {
-    "apiName": "Set8_ExoPrime",
-    "desc": "Use the Mecha selector item to choose a PRIME.<br><br>Combat start: The PRIME combines with the 2 nearest Mecha, absorbing @HealthPercent@% of their Base Health.<br><br><row>(@MinUnits@) The PRIME gains @APAmount@ Ability Power and @ADPercent@% Attack Damage</row><br><row>(@MinUnits@) All Mechas gain @APAmount@ Ability Power and @ADPercent@% Attack Damage; the PRIME gains double this amount</row>",
-    "effects": [
-      {
-        "maxUnits": 4,
-        "minUnits": 3,
-        "style": 1,
-        "variables": {
-          "HealthPercent": 90.0,
-          "{b19c3b58}": 60.0,
-          "{bc3d5e29}": 60.0
-        }
-      },
-      {
-        "maxUnits": 25000,
-        "minUnits": 5,
-        "style": 4,
-        "variables": {
-          "HealthPercent": 90.0,
-          "{b19c3b58}": 55.0,
-          "{bc3d5e29}": 55.0
-        }
-      }
-    ],
-    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_8_MechaPrime.tex",
-    "name": "Mecha:PRIME"
-  },
-  {
-    "apiName": "Set8_Threat",
-    "desc": "Threats do not have a Trait bonus, but instead have powerful Abilities and increased base stats.",
-    "effects": [
-      {
-        "maxUnits": 25000,
-        "minUnits": 1,
-        "style": 1,
-        "variables": {}
-      }
-    ],
-    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_8_Threat.tex",
-    "name": "Threat"
-  },
-  {
-    "apiName": "Set8_GunMage",
-    "desc": "After every 2 damaging ability projectiles, Quickdraw units fire a bonus ability projectile. Bonus shots deal:<br><br><row>(@MinUnits@) @DamageModifier*100@% total damage. </row><br><row>(@MinUnits@) @DamageModifier*100@% total damage. </row><br><row>(@MinUnits@) @DamageModifier*100@% total damage. </row>",
-    "effects": [
-      {
-        "maxUnits": 2,
-        "minUnits": 2,
-        "style": 1,
-        "variables": {
-          "{c9e8f369}": 0.699999988079071,
-          "{f71c4cde}": 2.0
-        }
-      },
-      {
-        "maxUnits": 3,
-        "minUnits": 3,
-        "style": 3,
-        "variables": {
-          "{c9e8f369}": 1.399999976158142,
-          "{f71c4cde}": 2.0
-        }
-      },
-      {
-        "maxUnits": 25000,
-        "minUnits": 4,
-        "style": 4,
-        "variables": {
-          "{c9e8f369}": 2.200000047683716,
-          "{f71c4cde}": 2.0
-        }
-      }
-    ],
-    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_8_Quickdraw.TFT_Set8_Stage2.tex",
-    "name": "Quickdraw"
-  },
-  {
-    "apiName": "Set8_Mascot",
-    "desc": "Your team heals a percentage of their maximum Health every @Seconds@ seconds, and Mascots heal double the amount.<br><br>When Mascots die, they retreat to the sidelines to cheer on your team. Your team's healing increases by @HealthRegenPerMascot@% for each cheering Mascot.<br><br><expandRow>(@MinUnits@) @BaseHealthRegen@% healing</expandRow><br>",
+    "apiName": "Set9_Sorcerer",
+    "desc": "Sorcerers gain bonus Ability Power.<br><br>When an enemy dies after being damaged by a Sorcerer, they deal a percentage of that enemy's maximum Health to another enemy.<br><br><row>(@MinUnits@) @BonusAP@ %i:scaleAP%; @HealthPct*100@% max %i:scaleHealth%</row><br><row>(@MinUnits@) @BonusAP@ %i:scaleAP%; @HealthPct*100@% max %i:scaleHealth%</row><br><row>(@MinUnits@) @BonusAP@ %i:scaleAP%; @HealthPct*100@% max %i:scaleHealth% to @TargetNum@ enemies</row><br><row>(@MinUnits@) @BonusAP@ %i:scaleAP%; @HealthPct*100@% max %i:scaleHealth% to @TargetNum@ enemies</row>",
     "effects": [
       {
         "maxUnits": 3,
         "minUnits": 2,
         "style": 1,
         "variables": {
-          "{66b6cdea}": 2.0,
-          "{a576b894}": 1.0,
-          "{d1ba07df}": 1.5
+          "{08335318}": 1.0,
+          "{6266505a}": 0.10000000149011612,
+          "{a34f32df}": 3.0,
+          "{d49caf5d}": 25.0
         }
       },
       {
@@ -292,99 +75,10 @@
         "minUnits": 4,
         "style": 3,
         "variables": {
-          "{66b6cdea}": 2.0,
-          "{a576b894}": 1.0,
-          "{d1ba07df}": 3.0
-        }
-      },
-      {
-        "maxUnits": 25000,
-        "minUnits": 6,
-        "style": 4,
-        "variables": {
-          "{66b6cdea}": 2.0,
-          "{a576b894}": 1.0,
-          "{d1ba07df}": 6.0
-        }
-      }
-    ],
-    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_8_Mascot.tex",
-    "name": "Mascot"
-  },
-  {
-    "apiName": "Set8_Forecaster",
-    "desc": "Depending on the weather, The Forecaster grants a different bonus to adjacent allies. The weather changes every game. ",
-    "effects": [
-      {
-        "maxUnits": 25000,
-        "minUnits": 1,
-        "style": 4,
-        "variables": {
-          "{18727ad0}": 8.0,
-          "{1a727df6}": 99.0,
-          "{1b727f89}": 15.0,
-          "{59983c1c}": 2000.0,
-          "{5a983daf}": 600.0,
-          "{5b983f42}": 400.0,
-          "{c4d287f1}": 5.0,
-          "{d3255094}": 20.0,
-          "{d52553ba}": 100.0,
-          "{d625554d}": 40.0,
-          "{e412bacb}": 10.0,
-          "{e512bc5e}": 10.0,
-          "{e612bdf1}": 45.0
-        }
-      }
-    ],
-    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_8_Forecaster.tex",
-    "name": "Forecaster"
-  },
-  {
-    "apiName": "Set8_Ace",
-    "desc": "This Trait is active only when you have exactly 1 or 4 unique Aces.<br><br><expandRow>(@MinUnits@) Execute enemies under @ExecuteThreshhold@% Health </expandRow><br><br>",
-    "effects": [
-      {
-        "maxUnits": 1,
-        "minUnits": 1,
-        "style": 1,
-        "variables": {
-          "{e63d763f}": 15.0
-        }
-      },
-      {
-        "maxUnits": 4,
-        "minUnits": 4,
-        "style": 4,
-        "variables": {
-          "{e63d763f}": 30.0
-        }
-      }
-    ],
-    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_8_Ace.tex",
-    "name": "Ace"
-  },
-  {
-    "apiName": "Set8_Duelist",
-    "desc": "Innate: Increased movement speed.<br><br>Duelists' attacks grant bonus Attack Speed, up to @MaxStacks@ stacks.<br><br><row> (@MinUnits@) +@ASPerStack@% Attack Speed per stack</row><br><row> (@MinUnits@) +@ASPerStack@% Attack Speed per stack</row><br><row> (@MinUnits@) +@ASPerStack@% Attack Speed per stack; Duelists take @DRPercent@% less damage</row><br><row> (@MinUnits@) +@ASPerStack@% Attack Speed per stack; Duelists take @DRPercent@% less damage</row>",
-    "effects": [
-      {
-        "maxUnits": 3,
-        "minUnits": 2,
-        "style": 1,
-        "variables": {
-          "MaxStacks": 12.0,
-          "{43afcd64}": 5.0,
-          "{b53fb400}": "null"
-        }
-      },
-      {
-        "maxUnits": 5,
-        "minUnits": 4,
-        "style": 3,
-        "variables": {
-          "MaxStacks": 12.0,
-          "{43afcd64}": 8.0,
-          "{b53fb400}": "null"
+          "{08335318}": 1.0,
+          "{6266505a}": 0.15000000596046448,
+          "{a34f32df}": 3.0,
+          "{d49caf5d}": 50.0
         }
       },
       {
@@ -392,9 +86,10 @@
         "minUnits": 6,
         "style": 4,
         "variables": {
-          "MaxStacks": 12.0,
-          "{43afcd64}": 10.0,
-          "{b53fb400}": 10.0
+          "{08335318}": 2.0,
+          "{6266505a}": 0.15000000596046448,
+          "{a34f32df}": 3.0,
+          "{d49caf5d}": 85.0
         }
       },
       {
@@ -402,40 +97,63 @@
         "minUnits": 8,
         "style": 5,
         "variables": {
-          "MaxStacks": 12.0,
-          "{43afcd64}": 16.0,
-          "{b53fb400}": 20.0
+          "{08335318}": 2.0,
+          "{6266505a}": 0.20000000298023224,
+          "{a34f32df}": 3.0,
+          "{d49caf5d}": 125.0
         }
       }
     ],
-    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_4_Duelist.tex",
-    "name": "Duelist"
+    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_3_Sorcerer.tex",
+    "name": "Sorcerer"
   },
   {
-    "apiName": "Set8_Parallel",
-    "desc": "(@MinUnits@) Ezreal learns from his older, more handsome self and joins him in future adventures. <br><br>Ezreal's Ability becomes a blast that hits all enemies in a line. <br><br>Ultimate Ezreal's Ability summons two additional temporal duplicates. ",
+    "apiName": "Set9_BandleCity",
+    "desc": "Your units gain @BonusAttackSpeed*100@% Attack Speed per star level.<br><br>If you have three 3-star champions, your Yordles can become 4-star, which gives their Ability a wacky upgrade!<br><br><row>(@MinUnits@) Your strongest 3-star Yordle</row><br><row>(@MinUnits@) Two 3-star Yordles</row><br><br><rules>Ties for most items are broken by the Yordle fielded most recently.</rules>",
     "effects": [
       {
-        "maxUnits": 2,
-        "minUnits": 2,
+        "maxUnits": 4,
+        "minUnits": 3,
+        "style": 1,
+        "variables": {
+          "BonusAttackSpeed": 0.10000000149011612,
+          "{25ec78e1}": 1.0,
+          "{7ccd3647}": 15.0,
+          "{852a9a90}": 2.0,
+          "{c235f1f1}": 0.5,
+          "{c4b5579c}": 100.0,
+          "{eae1472b}": 1.0
+        }
+      },
+      {
+        "maxUnits": 25000,
+        "minUnits": 5,
         "style": 4,
-        "variables": {}
+        "variables": {
+          "BonusAttackSpeed": 0.10000000149011612,
+          "{25ec78e1}": 2.0,
+          "{7ccd3647}": 15.0,
+          "{852a9a90}": 2.0,
+          "{c235f1f1}": 0.5,
+          "{c4b5579c}": 100.0,
+          "{eae1472b}": 2.0
+        }
       }
     ],
-    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_8_Parallel.TFT_Set8_Stage2.tex",
-    "name": "Parallel"
+    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_6_Yordle.tex",
+    "name": "Yordle"
   },
   {
-    "apiName": "Set8_OxForce",
-    "desc": "Ox Force units gain bonus defenses. Once per combat, when they would drop below one health, they instead go to one health and become immune to damage for @Seconds@ second.<br><br><expandRow>(@MinUnits@) @Defenses@ Armor and Magic Resist</expandRow>",
+    "apiName": "Set9_Deadeye",
+    "desc": "<spellPassive>Innate:</spellPassive> +@BonusRange@ Range<br><br>Every @ShotFrequency@ seconds, Deadeyes attack the enemy with the highest percent Health and deal bonus damage.<br><br><expandRow>(@MinUnits@) +@DamageAmp*100@% damage</expandRow>",
     "effects": [
       {
         "maxUnits": 3,
         "minUnits": 2,
         "style": 1,
         "variables": {
-          "{0bca9660}": 10.0,
-          "{66b6cdea}": 1.0
+          "DamageAmp": 0.20000000298023224,
+          "{428a4c11}": 3.0
         }
       },
       {
@@ -443,8 +161,8 @@
         "minUnits": 4,
         "style": 4,
         "variables": {
-          "{0bca9660}": 40.0,
-          "{66b6cdea}": 1.0
+          "DamageAmp": 0.550000011920929,
+          "{428a4c11}": 3.0
         }
       },
       {
@@ -452,140 +170,25 @@
         "minUnits": 6,
         "style": 5,
         "variables": {
-          "{0bca9660}": 90.0,
-          "{66b6cdea}": 1.0
+          "DamageAmp": 1.2000000476837158,
+          "{428a4c11}": 3.0
         }
       }
     ],
-    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_8_OxForce.tex",
-    "name": "Ox Force"
+    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Deadeye.TFT_Set9.tex",
+    "name": "Deadeye"
   },
   {
-    "apiName": "Set8_Aegis",
-    "desc": "Your team gains bonus Magic Resist, and Aegis units gain more.<br><br><expandRow>(@MinUnits@) +@MagicResist@ Magic Resist, +@AegisMagicResist@ for Aegis</expandRow>",
+    "apiName": "Set9_Void",
+    "desc": "Get a placeable void egg. At the start of combat, it hatches into an unspeakable horror and knocks up adjacent enemies.<br><br>Each Void star level increases the horror's Health and Ability Power by @PercentHealthAPPerStarLevel*100@%. <br><br><row>(@MinUnits@) Void Remora</row><br><row>(@MinUnits@) Rift Herald</row><br><row>(@MinUnits@) Baron Nashor</row>",
     "effects": [
       {
-        "maxUnits": 2,
-        "minUnits": 2,
-        "style": 1,
-        "variables": {
-          "MagicResist": 20.0,
-          "{8c9a056d}": 40.0
-        }
-      },
-      {
-        "maxUnits": 3,
-        "minUnits": 3,
-        "style": 3,
-        "variables": {
-          "MagicResist": 40.0,
-          "{8c9a056d}": 80.0
-        }
-      },
-      {
-        "maxUnits": 4,
-        "minUnits": 4,
-        "style": 4,
-        "variables": {
-          "MagicResist": 60.0,
-          "{8c9a056d}": 120.0
-        }
-      },
-      {
-        "maxUnits": 25000,
-        "minUnits": 5,
-        "style": 5,
-        "variables": {
-          "MagicResist": 90.0,
-          "{8c9a056d}": 180.0
-        }
-      }
-    ],
-    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_8_Aegis.tex",
-    "name": "Aegis"
-  },
-  {
-    "apiName": "Set8_UndergroundThe",
-    "desc": "The Underground must sneak through the sewers after each player combat and crack @RoundCount@ locks to open a vault. When the vault opens, you may choose to take the loot now, or attempt another heist for even better rewards.<br><br><expandRow>(@MinUnits@) @WinProgress@ locks per win, @LossProgress@ per loss</expandRow><br><br>Current Heist Level: @TFTUnitProperty.trait:TFT8_Underground_CurrentStage@<br><br>",
-    "effects": [
-      {
-        "maxUnits": 3,
+        "maxUnits": 5,
         "minUnits": 3,
         "style": 1,
         "variables": {
-          "{0fd23285}": 3.0,
-          "{17ca944d}": 20.0,
-          "{719c3fca}": 10.0,
-          "{7a9b83d2}": 2.0,
-          "{8b564fff}": 6.0,
-          "{c3eb3e44}": "null",
-          "{f8038ef4}": 4.0
-        }
-      },
-      {
-        "maxUnits": 4,
-        "minUnits": 4,
-        "style": 3,
-        "variables": {
-          "{0fd23285}": 4.0,
-          "{17ca944d}": 20.0,
-          "{719c3fca}": 10.0,
-          "{7a9b83d2}": 2.0,
-          "{8b564fff}": 8.0,
-          "{c3eb3e44}": "null",
-          "{f8038ef4}": 4.0
-        }
-      },
-      {
-        "maxUnits": 5,
-        "minUnits": 5,
-        "style": 4,
-        "variables": {
-          "{0fd23285}": 5.0,
-          "{17ca944d}": 20.0,
-          "{719c3fca}": 10.0,
-          "{7a9b83d2}": 3.0,
-          "{8b564fff}": 10.0,
-          "{c3eb3e44}": "null",
-          "{f8038ef4}": 6.0
-        }
-      },
-      {
-        "maxUnits": 25000,
-        "minUnits": 6,
-        "style": 5,
-        "variables": {
-          "{0fd23285}": 7.0,
-          "{17ca944d}": 20.0,
-          "{719c3fca}": 10.0,
-          "{7a9b83d2}": 4.0,
-          "{8b564fff}": 14.0,
-          "{c3eb3e44}": "null",
-          "{f8038ef4}": 8.0
-        }
-      }
-    ],
-    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_8_Underground.tex",
-    "name": "Underground"
-  },
-  {
-    "apiName": "Set8_StarGuardian",
-    "desc": "Star Guardians gain more Mana in combat. <br><br><expandRow>(@MinUnits@) @AdditionalManaPercentage@% Mana</expandRow>",
-    "effects": [
-      {
-        "maxUnits": 3,
-        "minUnits": 2,
-        "style": 1,
-        "variables": {
-          "{da19ba33}": 35.0
-        }
-      },
-      {
-        "maxUnits": 5,
-        "minUnits": 4,
-        "style": 3,
-        "variables": {
-          "{da19ba33}": 70.0
+          "{1eb1d2ae}": 0.25,
+          "{a4dcb3da}": 0.4000000059604645
         }
       },
       {
@@ -593,7 +196,8 @@
         "minUnits": 6,
         "style": 4,
         "variables": {
-          "{da19ba33}": 120.0
+          "{1eb1d2ae}": 0.25,
+          "{a4dcb3da}": 0.4000000059604645
         }
       },
       {
@@ -601,102 +205,162 @@
         "minUnits": 8,
         "style": 5,
         "variables": {
-          "{da19ba33}": 175.0
+          "{1eb1d2ae}": 0.25,
+          "{a4dcb3da}": 0.4000000059604645
         }
       }
     ],
-    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_3_StarGuardian.tex",
-    "name": "Star Guardian"
+    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Void.TFT_Set9.tex",
+    "name": "Void"
   },
   {
-    "apiName": "Set8_Prankster",
-    "desc": "<row>(@MinUnits@) Once per combat at @HealthThreshold@% Health, Pranksters spawn a target dummy, move to a safe location, and restore @HealthRegen@ Health. </row><br><row>(@MinUnits@) And, Prankster dummies stun the enemy that killed them for @StunDuration@ seconds.</row><br><row>(@MinUnits@) The Health restore is increased to @HealthRegen@ Health and the stun duration becomes @StunDuration@ seconds.</row><br>",
-    "effects": [
-      {
-        "maxUnits": 2,
-        "minUnits": 2,
-        "style": 1,
-        "variables": {
-          "HealthRegen": 150.0,
-          "HealthThreshold": 50.0,
-          "StunDuration": "null"
-        }
-      },
-      {
-        "maxUnits": 3,
-        "minUnits": 3,
-        "style": 4,
-        "variables": {
-          "HealthRegen": 150.0,
-          "HealthThreshold": 50.0,
-          "StunDuration": 1.5
-        }
-      },
-      {
-        "maxUnits": 25000,
-        "minUnits": 4,
-        "style": 5,
-        "variables": {
-          "HealthRegen": 350.0,
-          "HealthThreshold": 50.0,
-          "StunDuration": 2.0
-        }
-      }
-    ],
-    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_8_Prankster.tex",
-    "name": "Prankster"
-  },
-  {
-    "apiName": "Set8_Pulsefire",
-    "desc": "The InfiniTeam opens a portal to an alternate timeline. At the start of combat, any InfiniTeam unit placed on a portal summons an alternate version of themself with different items. They get 1 for each Augment you own. <br><br><tftitemrules>The copies have reduced Health and damage.</tftitemrules><br><br><row>(@MinUnits@) @NumberOfPortals@ portal opens, @DamageReduction@% damage and @PercentHealth@% HP</row><br><row>(@MinUnits@) @NumberOfPortals@ portals open, @DamageReduction@% damage and @PercentHealth@% HP</row><br><row>(@MinUnits@) @NumberOfPortals@ portals open, @DamageReduction@% damage and @PercentHealth@% HP</row>",
+    "apiName": "Set9_Demacia",
+    "desc": "Your strongest Demacians become Elite and equip a random Radiant item each combat. Elites grant Armor and Magic Resist to themselves and adjacent allies, but this does not stack.<br><br><row>(@MinUnits@) @NumElites@ Elite, +@BonusDefenses@ %i:scaleArmor%, +@BonusDefenses@ %i:scaleMR%</row><br><row>(@MinUnits@) @NumElites@ Elites, +@BonusDefenses@ %i:scaleArmor%, +@BonusDefenses@ %i:scaleMR%</row><br><row>(@MinUnits@) @NumElites@ Elites, +@BonusDefenses@ %i:scaleArmor%, +@BonusDefenses@ %i:scaleMR%</row><br><row>(@MinUnits@) @NumElites@ Elites, +@BonusDefenses@ %i:scaleArmor%, +@BonusDefenses@ %i:scaleMR%</row><br><br><rules>Radiant items are stronger versions of full items.</rules>",
     "effects": [
       {
         "maxUnits": 4,
         "minUnits": 3,
         "style": 1,
         "variables": {
-          "DamageReduction": 50.0,
-          "PercentHealth": 50.0,
-          "{0a967788}": 1.0,
-          "{ebe691d4}": 1.0
+          "{a750b59f}": 1.0,
+          "{bd072701}": 5.0
         }
       },
       {
         "maxUnits": 6,
         "minUnits": 5,
+        "style": 3,
+        "variables": {
+          "{a750b59f}": 2.0,
+          "{bd072701}": 15.0
+        }
+      },
+      {
+        "maxUnits": 8,
+        "minUnits": 7,
         "style": 4,
         "variables": {
-          "DamageReduction": 60.0,
-          "PercentHealth": 60.0,
-          "{0a967788}": 1.0,
-          "{ebe691d4}": 2.0
+          "{a750b59f}": 3.0,
+          "{bd072701}": 40.0
         }
       },
       {
         "maxUnits": 25000,
-        "minUnits": 7,
+        "minUnits": 9,
         "style": 5,
         "variables": {
-          "DamageReduction": 95.0,
-          "PercentHealth": 95.0,
-          "{0a967788}": 1.0,
-          "{ebe691d4}": 2.0
+          "{a750b59f}": 5.0,
+          "{bd072701}": 85.0
         }
       }
     ],
-    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_8_InfiniTeam.TFT_Set8_Stage2.tex",
-    "name": "InfiniTeam"
+    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Demacia.TFT_Set9.tex",
+    "name": "Demacia"
   },
   {
-    "apiName": "Set8_Heart",
-    "desc": "When Heart units cast their Ability, your team gains stacking Ability Power for the rest of combat.<br><br><expandRow>(@MinUnits@) +@APPerCast@ Ability Power</expandRow>",
+    "apiName": "Set9_Rogue",
+    "desc": "<row>(@MinUnits@) When a Rogue falls below @HealthThreshold*100@% Health, they briefly become untargetable and dash to an enemy within @HexRange@ hexes (preferring enemy backline).</row><br><row>(@MinUnits@) Additionally, a Rogue's first attack on an enemy bleeds them for @BleedMaxHealthPct*100@% of their max Health as magic damage over @BleedDuration@ seconds.</row>",
     "effects": [
       {
         "maxUnits": 3,
         "minUnits": 2,
         "style": 1,
         "variables": {
-          "{ebcfdef4}": 4.0
+          "DamageReduction": 100.0,
+          "HealthThreshold": 0.5,
+          "{0bc5955f}": "null",
+          "{77df45b0}": "null",
+          "{9b1e8f37}": 4.0,
+          "{b1442c34}": 1.5
+        }
+      },
+      {
+        "maxUnits": 25000,
+        "minUnits": 4,
+        "style": 4,
+        "variables": {
+          "DamageReduction": 100.0,
+          "HealthThreshold": 0.5,
+          "{0bc5955f}": 5.0,
+          "{77df45b0}": 0.30000001192092896,
+          "{9b1e8f37}": 4.0,
+          "{b1442c34}": 1.5
+        }
+      }
+    ],
+    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Rogue.TFT_Set9.tex",
+    "name": "Rogue"
+  },
+  {
+    "apiName": "Set9_Slayer",
+    "desc": "Slayers gain @Omnivamp@% Omnivamp.<br><br>Slayers deal bonus damage, doubled against units below @HealthThreshold*100@% Health.<br><br><expandRow>(@MinUnits@) +@BonusDamageBase@% bonus damage</expandRow>",
+    "effects": [
+      {
+        "maxUnits": 2,
+        "minUnits": 2,
+        "style": 1,
+        "variables": {
+          "BonusDamageBase": 5.0,
+          "HealthThreshold": 0.6000000238418579,
+          "{ad16f688}": 15.0
+        }
+      },
+      {
+        "maxUnits": 3,
+        "minUnits": 3,
+        "style": 3,
+        "variables": {
+          "BonusDamageBase": 10.0,
+          "HealthThreshold": 0.6000000238418579,
+          "{ad16f688}": 15.0
+        }
+      },
+      {
+        "maxUnits": 4,
+        "minUnits": 4,
+        "style": 3,
+        "variables": {
+          "BonusDamageBase": 20.0,
+          "HealthThreshold": 0.6000000238418579,
+          "{ad16f688}": 15.0
+        }
+      },
+      {
+        "maxUnits": 5,
+        "minUnits": 5,
+        "style": 4,
+        "variables": {
+          "BonusDamageBase": 30.0,
+          "HealthThreshold": 0.6000000238418579,
+          "{ad16f688}": 15.0
+        }
+      },
+      {
+        "maxUnits": 25000,
+        "minUnits": 6,
+        "style": 5,
+        "variables": {
+          "BonusDamageBase": 40.0,
+          "HealthThreshold": 0.6000000238418579,
+          "{ad16f688}": 15.0
+        }
+      }
+    ],
+    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_4_Slayer.tex",
+    "name": "Slayer"
+  },
+  {
+    "apiName": "Set9_Preserver",
+    "desc": "Every @TickRate@ seconds, your units gain Mana.<br><br><row>(@MinUnits@) @TeamMana@ %i:scaleMana%</row><br><row>(@MinUnits@) Additional @SelfBonusMana@ to Invokers</row><br><row>(@MinUnits@) @TeamMana@ %i:scaleMana% to all, additional @SelfBonusMana@ to Invokers</row><br>",
+    "effects": [
+      {
+        "maxUnits": 3,
+        "minUnits": 2,
+        "style": 1,
+        "variables": {
+          "{2af5ed55}": "null",
+          "{471b1a16}": 3.0,
+          "{dd3e2f2b}": 5.0
         }
       },
       {
@@ -704,7 +368,9 @@
         "minUnits": 4,
         "style": 3,
         "variables": {
-          "{ebcfdef4}": 7.0
+          "{2af5ed55}": 15.0,
+          "{471b1a16}": 3.0,
+          "{dd3e2f2b}": 5.0
         }
       },
       {
@@ -712,94 +378,26 @@
         "minUnits": 6,
         "style": 4,
         "variables": {
-          "{ebcfdef4}": 10.0
+          "{2af5ed55}": 15.0,
+          "{471b1a16}": 3.0,
+          "{dd3e2f2b}": 20.0
         }
       }
     ],
-    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_8_Heart.tex",
-    "name": "Heart"
+    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Preserver.TFT_Set9.tex",
+    "name": "Invoker"
   },
   {
-    "apiName": "Set8_Corrupted",
-    "desc": "(@MinUnits@) Combat start: Lie dormant while absorbing the souls of allies that die. Gain @BonusAP@ Ability Power for each soul.<br><br>Once per combat at @HealthThreshold@% Health (or when your team has died), come alive and fight.",
-    "effects": [
-      {
-        "maxUnits": 1,
-        "minUnits": 1,
-        "style": 4,
-        "variables": {
-          "HealthThreshold": 70.0,
-          "{d49caf5d}": 40.0
-        }
-      }
-    ],
-    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_8_Corrupted.tex",
-    "name": "Corrupted"
-  },
-  {
-    "apiName": "Set8_Supers",
-    "desc": "<row>(@MinUnits@) Combat start: Strike a pose that grants your team @BaseBonusDamage@% bonus damage, which increases by @BonusDamagePer3Star@% for every 3-star champion on your team.</row><br><br>Bonus damage: @TFTUnitProperty.trait:TFT8_Supers_TotalBonusDamage@%<br>",
-    "effects": [
-      {
-        "maxUnits": 25000,
-        "minUnits": 3,
-        "style": 4,
-        "variables": {
-          "{d5eeac4e}": 18.0,
-          "{fb280f31}": 3.0
-        }
-      }
-    ],
-    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_8_Supers.tex",
-    "name": "Supers"
-  },
-  {
-    "apiName": "Set8_Renegade",
-    "desc": "Renegade units deal bonus damage, and the last one standing deals more.<br><br><expandRow>(@MinUnits@) @BasePercentBonusDamage@% bonus damage, extra @AdditionalBonusDamage@% for last alive</expandRow><br>",
-    "effects": [
-      {
-        "maxUnits": 4,
-        "minUnits": 3,
-        "style": 1,
-        "variables": {
-          "{bac31d49}": 25.0,
-          "{bf647962}": 20.0
-        }
-      },
-      {
-        "maxUnits": 6,
-        "minUnits": 5,
-        "style": 3,
-        "variables": {
-          "{bac31d49}": 40.0,
-          "{bf647962}": 30.0
-        }
-      },
-      {
-        "maxUnits": 25000,
-        "minUnits": 7,
-        "style": 4,
-        "variables": {
-          "{bac31d49}": 70.0,
-          "{bf647962}": 40.0
-        }
-      }
-    ],
-    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_8_Renegade.tex",
-    "name": "Renegade"
-  },
-  {
-    "apiName": "Set8_Channeler",
-    "desc": "Every @RefreshSeconds@ seconds, Spellslinger's next attack instead fires a magic orb at a random target, which explodes for @MagicDamage@% Ability Power as magic damage.<br><br>Spellslingers gain:<br><row>(@MinUnits@) +@AP@ Ability Power</row><br><row>(@MinUnits@) +@AP@ Ability Power</row><br><row>(@MinUnits@) +@AP@ Ability Power</row><br><row>(@MinUnits@) +@AP@ Ability Power, and orbs deal @MagicDamage@% Ability Power</row>",
+    "apiName": "Set9_Bruiser",
+    "desc": "Your units gain @TeamFlatHealth@ Health. Bruisers gain additional maximum Health.<br><br><expandRow>(@MinUnits@) +@BonusPercentHealth*100@% max %i:scaleHealth%</expandRow>",
     "effects": [
       {
         "maxUnits": 3,
         "minUnits": 2,
         "style": 1,
         "variables": {
-          "AP": 25.0,
-          "MagicDamage": 50.0,
-          "{b258b089}": 5.0
+          "{392edb65}": 100.0,
+          "{a92bb347}": 0.15000000596046448
         }
       },
       {
@@ -807,46 +405,140 @@
         "minUnits": 4,
         "style": 3,
         "variables": {
+          "{392edb65}": 100.0,
+          "{a92bb347}": 0.4000000059604645
+        }
+      },
+      {
+        "maxUnits": 25000,
+        "minUnits": 6,
+        "style": 4,
+        "variables": {
+          "{392edb65}": 100.0,
+          "{a92bb347}": 0.800000011920929
+        }
+      }
+    ],
+    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_6_Bruiser.tex",
+    "name": "Bruiser"
+  },
+  {
+    "apiName": "Set9_Noxus",
+    "desc": "Noxus champions gain Health, Ability Power and Attack Damage. This is increased by @BonusRatio*100@% for each different opponent that either you have conquered in combat or is dead.<br><br><expandRow>(@MinUnits@) @Health@ %i:scaleHealth%, @AP@ %i:scaleAP%, @AD@% %i:scaleAD%</expandRow><br><br><TFTTrackerLabel>Conquered bonus: @TFTUnitProperty.trait:TFT9_Trait_ConquerorBonus@% / @BonusRatio*700@%</TFTTrackerLabel>",
+    "effects": [
+      {
+        "maxUnits": 5,
+        "minUnits": 3,
+        "style": 1,
+        "variables": {
+          "AD": 16.0,
+          "AP": 16.0,
+          "Health": 160.0,
+          "{d04ae9af}": 0.10000000149011612
+        }
+      },
+      {
+        "maxUnits": 8,
+        "minUnits": 6,
+        "style": 4,
+        "variables": {
+          "AD": 28.0,
+          "AP": 28.0,
+          "Health": 280.0,
+          "{d04ae9af}": 0.10000000149011612
+        }
+      },
+      {
+        "maxUnits": 25000,
+        "minUnits": 9,
+        "style": 5,
+        "variables": {
+          "AD": 45.0,
           "AP": 45.0,
-          "MagicDamage": 50.0,
-          "{b258b089}": 5.0
+          "Health": 45.0,
+          "{d04ae9af}": 0.10000000149011612
+        }
+      }
+    ],
+    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Noxus.TFT_Set9.tex",
+    "name": "Noxus"
+  },
+  {
+    "apiName": "Set9_Shurima",
+    "desc": "Every @PulsePeriod@ seconds, Shurimans heal @HealthRegen*100@% maximum Health. After @SecondsToAscend@ seconds, select Shurimans Ascend and gain @BonusHealthPercent*100@% maximum Health and @BonusASPercent*100@% Attack Speed.<br><br><row>(@MinUnits@) The strongest Shuriman Ascends</row><br><row>(@MinUnits@) All Shurimans Ascend</row><br><row>(@MinUnits@) All Ascend at the Start of Combat</row><br><row>(@MinUnits@) +@AscensionStrengthBoost*100@% Ascension bonus</row>",
+    "effects": [
+      {
+        "maxUnits": 4,
+        "minUnits": 3,
+        "style": 1,
+        "variables": {
+          "HealthRegen": 0.05000000074505806,
+          "{255e11cd}": 0.3499999940395355,
+          "{31128603}": 0.25,
+          "{473e51f7}": 4.0,
+          "{975a6fed}": 8.0,
+          "{98193878}": "null",
+          "{e3dc0fc2}": 2.0
         }
       },
       {
-        "maxUnits": 7,
-        "minUnits": 6,
+        "maxUnits": 6,
+        "minUnits": 5,
+        "style": 3,
+        "variables": {
+          "HealthRegen": 0.05000000074505806,
+          "{255e11cd}": 0.3499999940395355,
+          "{31128603}": 0.25,
+          "{473e51f7}": 4.0,
+          "{975a6fed}": 8.0,
+          "{98193878}": "null",
+          "{e3dc0fc2}": 2.0
+        }
+      },
+      {
+        "maxUnits": 8,
+        "minUnits": 7,
         "style": 4,
         "variables": {
-          "AP": 70.0,
-          "MagicDamage": 50.0,
-          "{b258b089}": 5.0
+          "HealthRegen": 0.05000000074505806,
+          "{255e11cd}": 0.3499999940395355,
+          "{31128603}": 0.25,
+          "{473e51f7}": 4.0,
+          "{975a6fed}": 8.0,
+          "{98193878}": "null",
+          "{e3dc0fc2}": 2.0
         }
       },
       {
         "maxUnits": 25000,
-        "minUnits": 8,
+        "minUnits": 9,
         "style": 5,
         "variables": {
-          "AP": 110.0,
-          "MagicDamage": 100.0,
-          "{b258b089}": 5.0
+          "HealthRegen": 0.05000000074505806,
+          "{255e11cd}": 0.3499999940395355,
+          "{31128603}": 0.25,
+          "{473e51f7}": 4.0,
+          "{975a6fed}": 8.0,
+          "{98193878}": 0.5,
+          "{e3dc0fc2}": 2.0
         }
       }
     ],
-    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_8_Spellslinger.tex",
-    "name": "Spellslinger"
+    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Shurima.TFT_Set9.tex",
+    "name": "Shurima"
   },
   {
-    "apiName": "Set8_Deadeye",
-    "desc": "Combat start: Sureshots gain bonus Attack Damage now, and every @Frequency@ seconds.<br><br><expandRow>(@MinUnits@) +@BonusAD*100@% Attack Damage</expandRow>",
+    "apiName": "Set9_Strategist",
+    "desc": "<spellPassive>Combat Start:</spellPassive> Allies in the front 2 rows gain a Shield for @ShieldDuration@ seconds. Allies in the back 2 rows gain Ability Power.<br><br><expandRow>(@MinUnits@) @ShieldHP@ Shield; @BonusAP@ %i:scaleAP%</expandRow><br>",
     "effects": [
       {
         "maxUnits": 2,
         "minUnits": 2,
         "style": 1,
         "variables": {
-          "BonusAD": 0.07000000029802322,
-          "{2fb31c01}": 4.0
+          "ShieldDuration": 15.0,
+          "{9d0939e8}": 200.0,
+          "{d49caf5d}": 20.0
         }
       },
       {
@@ -854,8 +546,9 @@
         "minUnits": 3,
         "style": 3,
         "variables": {
-          "BonusAD": 0.11999999731779099,
-          "{2fb31c01}": 4.0
+          "ShieldDuration": 15.0,
+          "{9d0939e8}": 350.0,
+          "{d49caf5d}": 30.0
         }
       },
       {
@@ -863,8 +556,9 @@
         "minUnits": 4,
         "style": 4,
         "variables": {
-          "BonusAD": 0.18000000715255737,
-          "{2fb31c01}": 4.0
+          "ShieldDuration": 15.0,
+          "{9d0939e8}": 500.0,
+          "{d49caf5d}": 45.0
         }
       },
       {
@@ -872,26 +566,336 @@
         "minUnits": 5,
         "style": 5,
         "variables": {
-          "BonusAD": 0.25,
-          "{2fb31c01}": 4.0
+          "ShieldDuration": 15.0,
+          "{9d0939e8}": 700.0,
+          "{d49caf5d}": 60.0
         }
       }
     ],
-    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_8_Sureshot.tex",
-    "name": "Sureshot"
+    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Strategist.TFT_Set9.tex",
+    "name": "Strategist"
   },
   {
-    "apiName": "Set8_Defender",
-    "desc": "Your team gains bonus Armor, and Defenders gain more. <br><br><expandRow> (@MinUnits@) +@BonusArmor@ Armor, +@DefenderBonusArmor@ for Defenders</expandRow>",
+    "apiName": "Set9_Redeemer",
+    "desc": "Whenever an ally gains a Shield, Senna grants them @AttackSpeed*100@% stacking Attack Speed for the rest of combat.",
+    "effects": [
+      {
+        "maxUnits": 25000,
+        "minUnits": 1,
+        "style": 4,
+        "variables": {
+          "AttackSpeed": 0.07999999821186066
+        }
+      }
+    ],
+    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Mistwalker.TFT_Set9.tex",
+    "name": "Redeemer"
+  },
+  {
+    "apiName": "Set9_Piltover",
+    "desc": "Gain the T-Hex. Every time you lose a player combat, the T-Hex gains Charges. Winning converts the Charges to Power for the T-Hex.<br><br>You may also sell the T-Hex if it has any Power, resetting the T-Hex and converting its Power to loot.<br><br><row>(@MinUnits@) Gain the T-Hex.</row><br><row>(@MinUnits@) Gain bonus loot every round. Each loss counts as 2 losses instead.</row>",
+    "effects": [
+      {
+        "maxUnits": 5,
+        "minUnits": 3,
+        "style": 4,
+        "variables": {
+          "{7714a401}": "null",
+          "{af532c9d}": 1.0
+        }
+      },
+      {
+        "maxUnits": 25000,
+        "minUnits": 6,
+        "style": 5,
+        "variables": {
+          "{7714a401}": 1.0,
+          "{af532c9d}": 1.0
+        }
+      }
+    ],
+    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Piltover.TFT_Set9.tex",
+    "name": "Piltover"
+  },
+  {
+    "apiName": "Set9_Multicaster",
+    "desc": "Multicasters cast their Ability multiple times. Bonus casts have @DamageReduction*100@% reduced effectiveness.<br><br><row>(@MinUnits@) @BonusCasts@ extra cast</row><br><row>(@MinUnits@) @BonusCasts@ extra casts</row>",
     "effects": [
       {
         "maxUnits": 3,
         "minUnits": 2,
         "style": 1,
         "variables": {
-          "BonusArmor": 25.0,
-          "{5cc52ba8}": 1.0,
-          "{830398ac}": 50.0
+          "DamageReduction": 0.5,
+          "{b99088b8}": 1.0
+        }
+      },
+      {
+        "maxUnits": 25000,
+        "minUnits": 4,
+        "style": 4,
+        "variables": {
+          "DamageReduction": 0.5,
+          "{b99088b8}": 2.0
+        }
+      }
+    ],
+    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Multicaster.TFT_Set9.tex",
+    "name": "Multicaster"
+  },
+  {
+    "apiName": "Set9_Marksman",
+    "desc": "When Gunner champions attack, they gain bonus Attack Damage, up to @MaxStacks@ stacks.<br><br><expandRow>(@MinUnits@) @PercentAD@% %i:scaleAD% per stack</expandRow>",
+    "effects": [
+      {
+        "maxUnits": 3,
+        "minUnits": 2,
+        "style": 1,
+        "variables": {
+          "MaxStacks": 8.0,
+          "{df3d2f5f}": 5.0
+        }
+      },
+      {
+        "maxUnits": 5,
+        "minUnits": 4,
+        "style": 4,
+        "variables": {
+          "MaxStacks": 8.0,
+          "{df3d2f5f}": 12.0
+        }
+      },
+      {
+        "maxUnits": 25000,
+        "minUnits": 6,
+        "style": 5,
+        "variables": {
+          "MaxStacks": 8.0,
+          "{df3d2f5f}": 20.0
+        }
+      }
+    ],
+    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Gunner.TFT_Set9.tex",
+    "name": "Gunner"
+  },
+  {
+    "apiName": "Set9_Empress",
+    "desc": "When Bel'Veth kills an enemy, they leave behind Void Coral that she will consume. The first Coral increases her maximum Health by @PercentBonusMaxHealth*100@%, while further Coral heals her @PercentHealthHeal*100@% maximum Health.<br><br>When a Void Coral is consumed, she deals @PercentHealthMagicDamage*100@% maximum Health as magic damage to enemies within @HexRange@ hexes.",
+    "effects": [
+      {
+        "maxUnits": 25000,
+        "minUnits": 1,
+        "style": 4,
+        "variables": {
+          "PercentHealthHeal": 0.20000000298023224,
+          "{0b0b3c63}": 0.5,
+          "{1ec4c4d2}": 0.10000000149011612,
+          "{9b1e8f37}": 2.0
+        }
+      }
+    ],
+    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Empress.TFT_Set9.tex",
+    "name": "Empress"
+  },
+  {
+    "apiName": "Set9_ShadowIsles",
+    "desc": "After dealing or receiving damage @DamageInstances@ times, Shadow Isles champions gain a Shield for @Duration@ seconds and become Spectral for the rest of combat. Spectral champions gain Mana every second.<br><br><expandRow>(@MinUnits@) @MaxHealthShield@% %i:scaleHealth% Shield, @ManaRegen@ %i:scaleMana%</expandRow>",
+    "effects": [
+      {
+        "maxUnits": 3,
+        "minUnits": 2,
+        "style": 1,
+        "variables": {
+          "Duration": 12.0,
+          "{0f5e9c98}": 8.0,
+          "{471b1a16}": 1.0,
+          "{4e39b1d2}": 40.0,
+          "{d8f646f3}": 5.0
+        }
+      },
+      {
+        "maxUnits": 5,
+        "minUnits": 4,
+        "style": 4,
+        "variables": {
+          "Duration": 12.0,
+          "{0f5e9c98}": 8.0,
+          "{471b1a16}": 1.0,
+          "{4e39b1d2}": 70.0,
+          "{d8f646f3}": 10.0
+        }
+      },
+      {
+        "maxUnits": 25000,
+        "minUnits": 6,
+        "style": 5,
+        "variables": {
+          "Duration": 12.0,
+          "{0f5e9c98}": 8.0,
+          "{471b1a16}": 1.0,
+          "{4e39b1d2}": 111.0,
+          "{d8f646f3}": 15.0
+        }
+      }
+    ],
+    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_ShadowIsles.TFT_Set9.tex",
+    "name": "Shadow Isles"
+  },
+  {
+    "apiName": "Set9_Freljord",
+    "desc": "After @DelayTime@ seconds, an ice storm strikes the battlefield. Enemies take a percentage of their maximum Health as true damage and gain debuffs.<br><br><row>(@MinUnits@) @PercentHealthDamage@% %i:scaleHealth%, enemies are @ShredSunder@% <TFTKeyword>Sundered</TFTKeyword> and <TFTKeyword>Shredded</TFTKeyword></row> for @Duration@ seconds<br><row>(@MinUnits@) @PercentHealthDamage@% %i:scaleHealth%, enemies are also @Reave@% <TFTKeyword>Mana Reaved</TFTKeyword></row><br><row>(@MinUnits@) @PercentHealthDamage@% %i:scaleHealth%, enemies are also stunned for @StunDuration@ seconds</row><br><br><rules><tftbold>Sunder</tftbold>: Reduce Armor<br><tftbold>Shred</tftbold>: Reduce Magic Resist<br><tftbold>Mana Reave</tftbold>: Increase max Mana until the next cast</rules>",
+    "effects": [
+      {
+        "maxUnits": 2,
+        "minUnits": 2,
+        "style": 1,
+        "variables": {
+          "Duration": 10.0,
+          "PercentHealthDamage": 5.0,
+          "{14adee04}": 40.0,
+          "{17f82fb1}": 8.0,
+          "{81ce23cf}": 1.0
+        }
+      },
+      {
+        "maxUnits": 3,
+        "minUnits": 3,
+        "style": 4,
+        "variables": {
+          "Duration": 10.0,
+          "PercentHealthDamage": 10.0,
+          "{17f82fb1}": 8.0,
+          "{5e31469e}": 35.0,
+          "{81ce23cf}": 2.0
+        }
+      },
+      {
+        "maxUnits": 25000,
+        "minUnits": 4,
+        "style": 5,
+        "variables": {
+          "Duration": 10.0,
+          "PercentHealthDamage": 15.0,
+          "StunDuration": 1.5,
+          "{17f82fb1}": 8.0,
+          "{81ce23cf}": 3.0
+        }
+      }
+    ],
+    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Freljord.TFT_Set9.tex",
+    "name": "Freljord"
+  },
+  {
+    "apiName": "Set9_Targon",
+    "desc": "All of your units' healing and shielding is improved.<br><br><expandRow>(@MinUnits@) @HealShieldIncrease*100@% increased healing and shielding </expandRow>",
+    "effects": [
+      {
+        "maxUnits": 2,
+        "minUnits": 2,
+        "style": 1,
+        "variables": {
+          "{0b39c7c2}": 0.18000000715255737
+        }
+      },
+      {
+        "maxUnits": 3,
+        "minUnits": 3,
+        "style": 4,
+        "variables": {
+          "{0b39c7c2}": 0.30000001192092896
+        }
+      },
+      {
+        "maxUnits": 25000,
+        "minUnits": 4,
+        "style": 5,
+        "variables": {
+          "{0b39c7c2}": 0.5
+        }
+      }
+    ],
+    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Targon.TFT_Set9.tex",
+    "name": "Targon"
+  },
+  {
+    "apiName": "Set9_Darkin",
+    "desc": "When Aatrox or the holder of the Darkin Blade dies, the Darkin Blade is equipped to the nearest allied champion, granting them @BonusHealth@ Health and @BonusOmnivamp*100@% Omnivamp.<br><br>After being equipped to a champion for @RespawnTimer@ seconds, Aatrox will revive upon their death instead.",
+    "effects": [
+      {
+        "maxUnits": 25000,
+        "minUnits": 1,
+        "style": 4,
+        "variables": {
+          "BonusHealth": 400.0,
+          "{8bdcd88d}": 0.15000000596046448,
+          "{ad17ba74}": 5.0
+        }
+      }
+    ],
+    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Darkin.TFT_Set9.tex",
+    "name": "Darkin"
+  },
+  {
+    "apiName": "Set9_Wanderer",
+    "desc": "Ryze's spell changes depending on the Region Portal players voted for at the start of the game.",
+    "effects": [
+      {
+        "maxUnits": 25000,
+        "minUnits": 1,
+        "style": 4,
+        "variables": {}
+      }
+    ],
+    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Wanderer.TFT_Set9.tex",
+    "name": "Wanderer"
+  },
+  {
+    "apiName": "Set9_Zaun",
+    "desc": "Zaun champions create random chem-mods that only they can use. Champions can be modded once, and mods can only be removed by selling the champion.<br><br><row>(@MinUnits@) Gain 1 chem-mod</row><br><row>(@MinUnits@) Gain 2 chem-mods </row><br><row>(@MinUnits@) Gain 3 chem-mods and Overcharge them</row><br>",
+    "effects": [
+      {
+        "maxUnits": 3,
+        "minUnits": 2,
+        "style": 1,
+        "variables": {
+          "{05b87026}": 1.0,
+          "{dbf68e4f}": "null"
+        }
+      },
+      {
+        "maxUnits": 5,
+        "minUnits": 4,
+        "style": 4,
+        "variables": {
+          "{05b87026}": 2.0,
+          "{dbf68e4f}": "null"
+        }
+      },
+      {
+        "maxUnits": 25000,
+        "minUnits": 6,
+        "style": 5,
+        "variables": {
+          "{05b87026}": 3.0,
+          "{dbf68e4f}": 1.0
+        }
+      }
+    ],
+    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Zaun.TFT_Set9.tex",
+    "name": "Zaun"
+  },
+  {
+    "apiName": "Set9_Armorclad",
+    "desc": "Juggernaut champions take less damage as their Health decreases.<br><br><expandRow>(@MinUnits@) @MinDR*100@% to @MaxDR*100@% damage reduction</expandRow>",
+    "effects": [
+      {
+        "maxUnits": 3,
+        "minUnits": 2,
+        "style": 1,
+        "variables": {
+          "Duration": 7.0,
+          "{012399e1}": 0.10000000149011612,
+          "{5532c3ef}": 0.20000000298023224
         }
       },
       {
@@ -899,9 +903,9 @@
         "minUnits": 4,
         "style": 3,
         "variables": {
-          "BonusArmor": 75.0,
-          "{5cc52ba8}": 1.0,
-          "{830398ac}": 150.0
+          "Duration": 7.0,
+          "{012399e1}": 0.20000000298023224,
+          "{5532c3ef}": 0.3499999940395355
         }
       },
       {
@@ -909,74 +913,153 @@
         "minUnits": 6,
         "style": 4,
         "variables": {
-          "BonusArmor": 200.0,
-          "{5cc52ba8}": 1.0,
-          "{830398ac}": 400.0
+          "Duration": 7.0,
+          "{012399e1}": 0.30000001192092896,
+          "{5532c3ef}": 0.5
         }
       }
     ],
-    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_8_Defender.tex",
-    "name": "Defender"
+    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Juggernaut.TFT_Set9.tex",
+    "name": "Juggernaut"
   },
   {
-    "apiName": "Set8_GenAE",
-    "desc": "Each round, Gadgeteens create random modified weapons with powerful effects that fall apart after one round. Gadgeteens also gain Damage and Damage Reduction for each item equipped to them.<br><br><row>(@MinUnits@) Create @ItemsToMake@ item, @Itembuff@% per item.</row><br><row>(@MinUnits@) Create @ItemsToMake@ items, @Itembuff@% per item.</row>",
+    "apiName": "Set9_Technogenius",
+    "desc": "Gain a placeable Apex Turret with 3 upgrade slots. Upgrades to the Apex Turret will show up in your shop for @GoldCost@ gold. The Apex Turret shares Heimerdinger's Attack Speed and Ability Power.<br><br><rules>You may only have 1 Apex Turret.</rules>",
     "effects": [
       {
-        "maxUnits": 4,
-        "minUnits": 3,
-        "style": 1,
-        "variables": {
-          "{7d4d3a93}": 3.0,
-          "{e3f67a80}": 1.0
-        }
-      },
-      {
         "maxUnits": 25000,
-        "minUnits": 5,
+        "minUnits": 1,
         "style": 4,
         "variables": {
-          "{7d4d3a93}": 10.0,
-          "{e3f67a80}": 2.0
+          "{8063e2fe}": 1.0,
+          "{cc5f430a}": 6.0,
+          "{db5e6ace}": 100.0
         }
       }
     ],
-    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_8_Gadgeteens.tex",
-    "name": "Gadgeteen"
+    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Technogenius.TFT_Set9.tex",
+    "name": "Technogenius"
   },
   {
-    "apiName": "Set8_Hacker",
-    "desc": "Hackers gain <TFTKeyword>Omnivamp</TFTKeyword> and summon a H4ckerr!m. Any unit placed in the rider hex will be sent to the enemy backline and is untargetable for the first @SecondsUntargetable@ seconds of combat.<br><br><row>(@MinUnits@) +@Omnivamp*100@% Omnivamp for Hackers, +@Horsevamp*100@% for the rider</row><br><row>(@MinUnits@) +@Omnivamp*100@% Omnivamp for Hackers, +@Horsevamp*100@% for the rider</row><br><row>(@MinUnits@) +@Omnivamp*100@% Omnivamp for Hackers, +@Horsevamp*100@% for the rider</row><br><br><tftitemrules><tftbold>Omnivamp</tftbold>: heal for some of damage dealt</tftitemrules>",
+    "apiName": "Set9_Challenger",
+    "desc": "Challengers gain bonus Attack Speed. When their target dies, Challengers dash to a new target and increase their Attack Speed bonus by @IncreasePct*100@% for @BurstDuration@ seconds.<br><br><expandRow>(@MinUnits@) @BonusAS@% %i:scaleAS%</expandRow>",
     "effects": [
       {
         "maxUnits": 3,
-        "minUnits": 3,
+        "minUnits": 2,
         "style": 1,
         "variables": {
-          "{692f8d6e}": 0.10000000149011612,
-          "{ad16f688}": 0.30000001192092896
+          "BonusAS": 30.0,
+          "{17cfa971}": 2.5,
+          "{89094428}": 0.5
         }
       },
       {
-        "maxUnits": 4,
+        "maxUnits": 5,
         "minUnits": 4,
+        "style": 3,
+        "variables": {
+          "BonusAS": 60.0,
+          "{17cfa971}": 2.5,
+          "{89094428}": 0.5
+        }
+      },
+      {
+        "maxUnits": 7,
+        "minUnits": 6,
         "style": 4,
         "variables": {
-          "{692f8d6e}": 0.20000000298023224,
-          "{ad16f688}": 0.4000000059604645
+          "BonusAS": 90.0,
+          "{17cfa971}": 2.5,
+          "{89094428}": 0.5
         }
       },
       {
         "maxUnits": 25000,
-        "minUnits": 5,
+        "minUnits": 8,
         "style": 5,
         "variables": {
-          "{692f8d6e}": 0.30000001192092896,
-          "{ad16f688}": 0.5
+          "BonusAS": 125.0,
+          "{17cfa971}": 2.5,
+          "{89094428}": 0.5
         }
       }
     ],
-    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_8_Hacker.tex",
-    "name": "Hacker"
+    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_6_Challenger.tex",
+    "name": "Challenger"
+  },
+  {
+    "apiName": "Set9_Ionia",
+    "desc": "Each Ionian has a unique bonus within their Ability. <br><br>Every @SpiritDuration@ seconds, a number of Ionians are enlightened to their spirit form, gaining @Mana@ mana and doubling stat bonuses for @SpiritDuration@ seconds.<br><br><expandRow>(@MinUnits@) @TooltipBonus*100@% Ionian bonus, @NumberOfSpirits@ enlightened</expandRow>",
+    "effects": [
+      {
+        "maxUnits": 5,
+        "minUnits": 3,
+        "style": 1,
+        "variables": {
+          "Mana": 20.0,
+          "{18bfc1ac}": 10.0,
+          "{1b8cd16a}": 30.0,
+          "{27b17444}": 30.0,
+          "{3076bc18}": 4.0,
+          "{3fc62f6f}": 2.0,
+          "{4df03474}": 180.0,
+          "{53912082}": 1.0,
+          "{b9a6ee1b}": 15.0,
+          "{c5f948bd}": 1.0,
+          "{eb0c521b}": 15.0,
+          "{ed124bdb}": 30.0,
+          "{f2474447}": 1.0,
+          "{f6b4b588}": 3.0,
+          "{f809601e}": 33.0
+        }
+      },
+      {
+        "maxUnits": 8,
+        "minUnits": 6,
+        "style": 4,
+        "variables": {
+          "Mana": 20.0,
+          "{18bfc1ac}": 20.0,
+          "{1b8cd16a}": 60.0,
+          "{27b17444}": 80.0,
+          "{3076bc18}": 4.0,
+          "{3fc62f6f}": 2.0,
+          "{4df03474}": 360.0,
+          "{53912082}": 1.0,
+          "{b9a6ee1b}": 30.0,
+          "{c5f948bd}": 2.0,
+          "{eb0c521b}": 30.0,
+          "{ed124bdb}": 60.0,
+          "{f2474447}": 2.0,
+          "{f6b4b588}": 6.0,
+          "{f809601e}": 66.0
+        }
+      },
+      {
+        "maxUnits": 25000,
+        "minUnits": 9,
+        "style": 5,
+        "variables": {
+          "Mana": 20.0,
+          "{18bfc1ac}": 30.0,
+          "{1b8cd16a}": 90.0,
+          "{27b17444}": 120.0,
+          "{3076bc18}": 4.0,
+          "{3fc62f6f}": 2.0,
+          "{4df03474}": 540.0,
+          "{53912082}": 1.0,
+          "{b9a6ee1b}": 45.0,
+          "{c5f948bd}": 3.0,
+          "{eb0c521b}": 45.0,
+          "{ed124bdb}": 90.0,
+          "{f2474447}": 3.0,
+          "{f6b4b588}": 9.0,
+          "{f809601e}": 99.0
+        }
+      }
+    ],
+    "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Ionia.TFT_Set9.tex",
+    "name": "Ionia"
   }
 ]
